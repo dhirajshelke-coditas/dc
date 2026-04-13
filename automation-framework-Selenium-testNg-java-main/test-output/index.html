@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-EcommerceSuite" class="navigator-link">
+              <span class="suite-name border-failed">EcommerceSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-EcommerceSuite" class="navigator-link ">
+                    <span>C:\Users\Dheeraj\Downloads\autocommit-main\autocommit-main\automation-framework-Selenium-testNg-java-main\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-EcommerceSuite" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-EcommerceSuite" class="navigator-link ">
+                    <span>6 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-EcommerceSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-EcommerceSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-EcommerceSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-EcommerceSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">19 methods, 2 failed,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-EcommerceSuite" class="hide-methods failed suite-EcommerceSuite"> (hide)</a> <!-- hide-methods failed suite-EcommerceSuite -->
+                      <a href="#" panel-name="suite-EcommerceSuite" class="show-methods failed suite-EcommerceSuite"> (show)</a> <!-- show-methods failed suite-EcommerceSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-EcommerceSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="testCases.RegisterAccountTestCases" class="method navigator-link" hash-for-method="verifyRegistrationWithPasswordMismatch">verifyRegistrationWithPasswordMismatch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="testCases.RegisterAccountTestCases" class="method navigator-link" hash-for-method="verifyRegistrationWithoutPrivacyPolicy">verifyRegistrationWithoutPrivacyPolicy</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-EcommerceSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-EcommerceSuite" class="hide-methods passed suite-EcommerceSuite"> (hide)</a> <!-- hide-methods passed suite-EcommerceSuite -->
+                      <a href="#" panel-name="suite-EcommerceSuite" class="show-methods passed suite-EcommerceSuite"> (show)</a> <!-- show-methods passed suite-EcommerceSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-EcommerceSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="testCases.HomePageTestCases" class="method navigator-link" hash-for-method="verifyHomePageTitle">verifyHomePageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="testCases.LoginTestCases" class="method navigator-link" hash-for-method="verifyLoginPageElementsAreVisible">verifyLoginPageElementsAreVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="testCases.LoginTestCases" class="method navigator-link" hash-for-method="verifyLoginWithBothFieldsEmpty">verifyLoginWithBothFieldsEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="testCases.LoginTestCases" class="method navigator-link" hash-for-method="verifyLoginWithEmptyEmail">verifyLoginWithEmptyEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="testCases.LoginTestCases" class="method navigator-link" hash-for-method="verifyLoginWithEmptyPassword">verifyLoginWithEmptyPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="testCases.LoginTestCases" class="method navigator-link" hash-for-method="verifyLoginWithInvalidCredentials">verifyLoginWithInvalidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="testCases.LoginTestCases" class="method navigator-link" hash-for-method="verifyLoginWithInvalidEmailFormat">verifyLoginWithInvalidEmailFormat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="testCases.LoginTestCases" class="method navigator-link" hash-for-method="verifyLoginWithWrongPassword">verifyLoginWithWrongPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="testCases.HomePageTestCases" class="method navigator-link" hash-for-method="verifyNavigationToLoginPage">verifyNavigationToLoginPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="testCases.HomePageTestCases" class="method navigator-link" hash-for-method="verifyNavigationToRegisterPage">verifyNavigationToRegisterPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="testCases.RegisterAccountTestCases" class="method navigator-link" hash-for-method="verifyRegistrationWithAllFieldsEmpty">verifyRegistrationWithAllFieldsEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="testCases.RegisterAccountTestCases" class="method navigator-link" hash-for-method="verifyRegistrationWithDuplicateEmail">verifyRegistrationWithDuplicateEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="testCases.RegisterAccountTestCases" class="method navigator-link" hash-for-method="verifyRegistrationWithInvalidEmailFormat">verifyRegistrationWithInvalidEmailFormat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="testCases.RegisterAccountTestCases" class="method navigator-link" hash-for-method="verifyRegistrationWithWeakPassword">verifyRegistrationWithWeakPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="testCases.LoginTestCases" class="method navigator-link" hash-for-method="verifySuccessfulLogin">verifySuccessfulLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="testCases.LoginTestCases" class="method navigator-link" hash-for-method="verifySuccessfulLogout">verifySuccessfulLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EcommerceSuite" title="testCases.RegisterAccountTestCases" class="method navigator-link" hash-for-method="verifySuccessfulRegistration">verifySuccessfulRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-EcommerceSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-EcommerceSuite" class="panel EcommerceSuite">
+          <div class="suite-EcommerceSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.RegisterAccountTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistrationWithPasswordMismatch">
+                  </a> <!-- verifyRegistrationWithPasswordMismatch -->
+                  <span class="method-name">verifyRegistrationWithPasswordMismatch</span>
+                  <div class="stack-trace">java.lang.AssertionError: TC-R03 FAILED: Password mismatch error not displayed expected [true] but found [false]
+	at testCases.RegisterAccountTestCases.verifyRegistrationWithPasswordMismatch(RegisterAccountTestCases.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify registration fails with password mismatch)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistrationWithoutPrivacyPolicy">
+                  </a> <!-- verifyRegistrationWithoutPrivacyPolicy -->
+                  <span class="method-name">verifyRegistrationWithoutPrivacyPolicy</span>
+                  <div class="stack-trace">java.lang.AssertionError: TC-R06 FAILED: Should not register without policy agreement expected [true] but found [false]
+	at testCases.RegisterAccountTestCases.verifyRegistrationWithoutPrivacyPolicy(RegisterAccountTestCases.java:126)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify registration without accepting privacy policy)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EcommerceSuite-class-failed -->
+          <div class="suite-EcommerceSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.RegisterAccountTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistrationWithAllFieldsEmpty">
+                  </a> <!-- verifyRegistrationWithAllFieldsEmpty -->
+                  <span class="method-name">verifyRegistrationWithAllFieldsEmpty</span>
+                  <em>
+(Verify registration fails when all fields are empty)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistrationWithDuplicateEmail">
+                  </a> <!-- verifyRegistrationWithDuplicateEmail -->
+                  <span class="method-name">verifyRegistrationWithDuplicateEmail</span>
+                  <em>
+(Verify registration fails with already registered email)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistrationWithInvalidEmailFormat">
+                  </a> <!-- verifyRegistrationWithInvalidEmailFormat -->
+                  <span class="method-name">verifyRegistrationWithInvalidEmailFormat</span>
+                  <em>
+(Verify registration with invalid email format)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegistrationWithWeakPassword">
+                  </a> <!-- verifyRegistrationWithWeakPassword -->
+                  <span class="method-name">verifyRegistrationWithWeakPassword</span>
+                  <em>
+(Verify registration with short (weak) password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySuccessfulRegistration">
+                  </a> <!-- verifySuccessfulRegistration -->
+                  <span class="method-name">verifySuccessfulRegistration</span>
+                  <em>
+(Verify successful registration with valid data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EcommerceSuite-class-passed -->
+          <div class="suite-EcommerceSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.LoginTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginPageElementsAreVisible">
+                  </a> <!-- verifyLoginPageElementsAreVisible -->
+                  <span class="method-name">verifyLoginPageElementsAreVisible</span>
+                  <em>
+(Verify all login page elements are visible)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithBothFieldsEmpty">
+                  </a> <!-- verifyLoginWithBothFieldsEmpty -->
+                  <span class="method-name">verifyLoginWithBothFieldsEmpty</span>
+                  <em>
+(Verify login with both fields empty)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithEmptyEmail">
+                  </a> <!-- verifyLoginWithEmptyEmail -->
+                  <span class="method-name">verifyLoginWithEmptyEmail</span>
+                  <em>
+(Verify login with empty email field stays on login page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithEmptyPassword">
+                  </a> <!-- verifyLoginWithEmptyPassword -->
+                  <span class="method-name">verifyLoginWithEmptyPassword</span>
+                  <em>
+(Verify login with empty password stays on login page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithInvalidCredentials">
+                  </a> <!-- verifyLoginWithInvalidCredentials -->
+                  <span class="method-name">verifyLoginWithInvalidCredentials</span>
+                  <em>
+(Verify login with invalid email and password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithInvalidEmailFormat">
+                  </a> <!-- verifyLoginWithInvalidEmailFormat -->
+                  <span class="method-name">verifyLoginWithInvalidEmailFormat</span>
+                  <em>
+(Verify login with invalid email format)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithWrongPassword">
+                  </a> <!-- verifyLoginWithWrongPassword -->
+                  <span class="method-name">verifyLoginWithWrongPassword</span>
+                  <em>
+(Verify login with wrong password for valid email)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySuccessfulLogin">
+                  </a> <!-- verifySuccessfulLogin -->
+                  <span class="method-name">verifySuccessfulLogin</span>
+                  <em>
+(Verify successful login with valid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySuccessfulLogout">
+                  </a> <!-- verifySuccessfulLogout -->
+                  <span class="method-name">verifySuccessfulLogout</span>
+                  <em>
+(Verify successful login and logout)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EcommerceSuite-class-passed -->
+          <div class="suite-EcommerceSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.HomePageTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomePageTitle">
+                  </a> <!-- verifyHomePageTitle -->
+                  <span class="method-name">verifyHomePageTitle</span>
+                  <em>
+(Verify page title on homepage)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNavigationToLoginPage">
+                  </a> <!-- verifyNavigationToLoginPage -->
+                  <span class="method-name">verifyNavigationToLoginPage</span>
+                  <em>
+(Verify navigation to Login page from HomePage)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNavigationToRegisterPage">
+                  </a> <!-- verifyNavigationToRegisterPage -->
+                  <span class="method-name">verifyNavigationToRegisterPage</span>
+                  <em>
+(Verify navigation to Register page from HomePage)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EcommerceSuite-class-passed -->
+        </div> <!-- panel EcommerceSuite -->
+        <div panel-name="test-xml-EcommerceSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Dheeraj\Downloads\autocommit-main\autocommit-main\automation-framework-Selenium-testNg-java-main\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;EcommerceSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listner.ExtentReportListner&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;HomePageTests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.HomePageTestCases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- HomePageTests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;RegisterTests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.RegisterAccountTestCases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- RegisterTests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LoginTests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.LoginTestCases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginTests --&gt;
+&lt;/suite&gt; &lt;!-- EcommerceSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-EcommerceSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for EcommerceSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">HomePageTests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">RegisterTests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">LoginTests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-EcommerceSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for EcommerceSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">field-validation</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginWithBothFieldsEmpty</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginWithEmptyEmail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginWithEmptyPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginWithInvalidEmailFormat</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyRegistrationWithAllFieldsEmpty</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyRegistrationWithInvalidEmailFormat</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyRegistrationWithPasswordMismatch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyRegistrationWithWeakPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyRegistrationWithoutPrivacyPolicy</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">homepage</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyHomePageTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyNavigationToLoginPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyNavigationToRegisterPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">login</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginPageElementsAreVisible</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginWithBothFieldsEmpty</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginWithEmptyEmail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginWithEmptyPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginWithInvalidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginWithInvalidEmailFormat</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginWithWrongPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySuccessfulLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySuccessfulLogout</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">register</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyRegistrationWithAllFieldsEmpty</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyRegistrationWithDuplicateEmail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyRegistrationWithInvalidEmailFormat</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyRegistrationWithPasswordMismatch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyRegistrationWithWeakPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyRegistrationWithoutPrivacyPolicy</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySuccessfulRegistration</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginWithInvalidCredentials</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginWithWrongPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyRegistrationWithDuplicateEmail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyHomePageTitle</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLoginPageElementsAreVisible</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyNavigationToLoginPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyNavigationToRegisterPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySuccessfulLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySuccessfulLogout</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifySuccessfulRegistration</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-EcommerceSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for EcommerceSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_EcommerceSuite');
+function tableData_EcommerceSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(19);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifySuccessfulRegistration')
+data.setCell(0, 2, 'testCases.RegisterAccountTestCases')
+data.setCell(0, 3, 10427);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyLoginWithEmptyEmail')
+data.setCell(1, 2, 'testCases.LoginTestCases')
+data.setCell(1, 3, 5878);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifySuccessfulLogout')
+data.setCell(2, 2, 'testCases.LoginTestCases')
+data.setCell(2, 3, 5681);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyRegistrationWithPasswordMismatch')
+data.setCell(3, 2, 'testCases.RegisterAccountTestCases')
+data.setCell(3, 3, 4783);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifySuccessfulLogin')
+data.setCell(4, 2, 'testCases.LoginTestCases')
+data.setCell(4, 3, 4662);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyRegistrationWithoutPrivacyPolicy')
+data.setCell(5, 2, 'testCases.RegisterAccountTestCases')
+data.setCell(5, 3, 4655);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyNavigationToRegisterPage')
+data.setCell(6, 2, 'testCases.HomePageTestCases')
+data.setCell(6, 3, 4319);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyLoginWithInvalidEmailFormat')
+data.setCell(7, 2, 'testCases.LoginTestCases')
+data.setCell(7, 3, 3910);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyLoginPageElementsAreVisible')
+data.setCell(8, 2, 'testCases.LoginTestCases')
+data.setCell(8, 3, 3819);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyLoginWithInvalidCredentials')
+data.setCell(9, 2, 'testCases.LoginTestCases')
+data.setCell(9, 3, 3453);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyRegistrationWithAllFieldsEmpty')
+data.setCell(10, 2, 'testCases.RegisterAccountTestCases')
+data.setCell(10, 3, 3447);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyLoginWithWrongPassword')
+data.setCell(11, 2, 'testCases.LoginTestCases')
+data.setCell(11, 3, 3417);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyLoginWithBothFieldsEmpty')
+data.setCell(12, 2, 'testCases.LoginTestCases')
+data.setCell(12, 3, 3183);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyLoginWithEmptyPassword')
+data.setCell(13, 2, 'testCases.LoginTestCases')
+data.setCell(13, 3, 3148);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyRegistrationWithWeakPassword')
+data.setCell(14, 2, 'testCases.RegisterAccountTestCases')
+data.setCell(14, 3, 3080);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyRegistrationWithDuplicateEmail')
+data.setCell(15, 2, 'testCases.RegisterAccountTestCases')
+data.setCell(15, 3, 2783);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifyRegistrationWithInvalidEmailFormat')
+data.setCell(16, 2, 'testCases.RegisterAccountTestCases')
+data.setCell(16, 3, 2283);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyNavigationToLoginPage')
+data.setCell(17, 2, 'testCases.HomePageTestCases')
+data.setCell(17, 3, 1638);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyHomePageTitle')
+data.setCell(18, 2, 'testCases.HomePageTestCases')
+data.setCell(18, 3, 14);
+window.suiteTableData['EcommerceSuite']= { tableData: data, tableDiv: 'times-div-EcommerceSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-EcommerceSuite">
+              </div> <!-- times-div-EcommerceSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-EcommerceSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for EcommerceSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-EcommerceSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-EcommerceSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.HomePageTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">9267 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNavigationToRegisterPage</span>
+                <span class="method-start">10268 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">14600 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNavigationToLoginPage</span>
+                <span class="method-start">15271 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">16915 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyHomePageTitle</span>
+                <span class="method-start">17844 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">quit</span>
+                <span class="method-start">17863 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.RegisterAccountTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">18145 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">24254 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySuccessfulRegistration</span>
+                <span class="method-start">26233 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">36665 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegistrationWithDuplicateEmail</span>
+                <span class="method-start">38305 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">41090 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyRegistrationWithPasswordMismatch</span>
+                <span class="method-start">43410 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">48437 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegistrationWithAllFieldsEmpty</span>
+                <span class="method-start">50812 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">54268 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegistrationWithInvalidEmailFormat</span>
+                <span class="method-start">56688 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">58976 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyRegistrationWithoutPrivacyPolicy</span>
+                <span class="method-start">61584 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">66394 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyRegistrationWithWeakPassword</span>
+                <span class="method-start">68751 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">quit</span>
+                <span class="method-start">71833 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.LoginTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup</span>
+                <span class="method-start">72081 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">78344 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginPageElementsAreVisible</span>
+                <span class="method-start">80811 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">84632 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySuccessfulLogin</span>
+                <span class="method-start">86445 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">91111 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySuccessfulLogout</span>
+                <span class="method-start">92831 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">98514 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithInvalidCredentials</span>
+                <span class="method-start">100493 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">103948 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithWrongPassword</span>
+                <span class="method-start">106233 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">109655 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithEmptyEmail</span>
+                <span class="method-start">110645 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">116528 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithEmptyPassword</span>
+                <span class="method-start">119994 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">123145 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithBothFieldsEmpty</span>
+                <span class="method-start">125980 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">129166 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithInvalidEmailFormat</span>
+                <span class="method-start">131785 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">quit</span>
+                <span class="method-start">135701 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

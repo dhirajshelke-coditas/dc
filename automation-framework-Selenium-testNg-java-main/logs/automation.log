@@ -1,0 +1,115 @@
+2026-04-13 15:54:45 INFO  ExtentReportListner:37 - Extent Report initialized. Suite started: EcommerceSuite
+2026-04-13 15:54:45 INFO  SuiteSetup:19 - ===== Test Setup Started =====
+2026-04-13 15:54:45 INFO  SuiteSetup:23 - Browser from config: chrome
+2026-04-13 15:54:50 INFO  SuiteSetup:26 - Driver initialized successfully.
+2026-04-13 15:54:50 INFO  SuiteSetup:29 - Pages initialized successfully.
+2026-04-13 15:54:55 INFO  SuiteSetup:32 - URL launched: https://ecommerce-playground.lambdatest.io/
+2026-04-13 15:54:55 INFO  SuiteSetup:33 - ===== Test Setup Completed =====
+2026-04-13 15:54:56 INFO  ExtentReportListner:53 - Test started: verifyNavigationToRegisterPage
+2026-04-13 15:54:56 INFO  HomePageTestCases:25 - TC-HP01: Verify navigation to Register page
+2026-04-13 15:55:00 INFO  HomePageTestCases:33 - TC-HP01 PASSED
+2026-04-13 15:55:00 INFO  ExtentReportListner:59 - Test PASSED: verifyNavigationToRegisterPage
+2026-04-13 15:55:01 INFO  ExtentReportListner:53 - Test started: verifyNavigationToLoginPage
+2026-04-13 15:55:01 INFO  HomePageTestCases:39 - TC-HP02: Verify navigation to Login page
+2026-04-13 15:55:02 INFO  HomePageTestCases:47 - TC-HP02 PASSED
+2026-04-13 15:55:02 INFO  ExtentReportListner:59 - Test PASSED: verifyNavigationToLoginPage
+2026-04-13 15:55:03 INFO  ExtentReportListner:53 - Test started: verifyHomePageTitle
+2026-04-13 15:55:03 INFO  HomePageTestCases:53 - TC-HP03: Verify homepage title
+2026-04-13 15:55:03 INFO  HomePageTestCases:57 - TC-HP03 PASSED - Title: Your Store
+2026-04-13 15:55:03 INFO  ExtentReportListner:59 - Test PASSED: verifyHomePageTitle
+2026-04-13 15:55:03 INFO  SuiteSetup:49 - ===== Test Teardown =====
+2026-04-13 15:55:04 INFO  SuiteSetup:19 - ===== Test Setup Started =====
+2026-04-13 15:55:04 INFO  SuiteSetup:23 - Browser from config: chrome
+2026-04-13 15:55:04 INFO  SuiteSetup:26 - Driver initialized successfully.
+2026-04-13 15:55:04 INFO  SuiteSetup:29 - Pages initialized successfully.
+2026-04-13 15:55:10 INFO  SuiteSetup:32 - URL launched: https://ecommerce-playground.lambdatest.io/
+2026-04-13 15:55:10 INFO  SuiteSetup:33 - ===== Test Setup Completed =====
+2026-04-13 15:55:10 INFO  RegisterAccountTestCases:21 - Clearing session and navigating to base URL before each test
+2026-04-13 15:55:12 INFO  ExtentReportListner:53 - Test started: verifySuccessfulRegistration
+2026-04-13 15:55:12 INFO  RegisterAccountTestCases:32 - TC-R01: Verify successful registration with valid data
+2026-04-13 15:55:22 INFO  RegisterAccountTestCases:45 - TC-R01 PASSED
+2026-04-13 15:55:22 INFO  ExtentReportListner:59 - Test PASSED: verifySuccessfulRegistration
+2026-04-13 15:55:22 INFO  RegisterAccountTestCases:21 - Clearing session and navigating to base URL before each test
+2026-04-13 15:55:24 INFO  ExtentReportListner:53 - Test started: verifyRegistrationWithDuplicateEmail
+2026-04-13 15:55:24 INFO  RegisterAccountTestCases:53 - TC-R02: Verify registration with duplicate/already registered email
+2026-04-13 15:55:26 INFO  RegisterAccountTestCases:64 - TC-R02 PASSED
+2026-04-13 15:55:26 INFO  ExtentReportListner:59 - Test PASSED: verifyRegistrationWithDuplicateEmail
+2026-04-13 15:55:26 INFO  RegisterAccountTestCases:21 - Clearing session and navigating to base URL before each test
+2026-04-13 15:55:29 INFO  ExtentReportListner:53 - Test started: verifyRegistrationWithPasswordMismatch
+2026-04-13 15:55:29 INFO  RegisterAccountTestCases:70 - TC-R03: Verify registration with mismatched passwords
+2026-04-13 15:55:34 ERROR ExtentReportListner:65 - Test FAILED: verifyRegistrationWithPasswordMismatch | Reason: TC-R03 FAILED: Password mismatch error not displayed expected [true] but found [false]
+2026-04-13 15:55:34 INFO  ExtentReportListner:70 - Screenshot captured for failed test: verifyRegistrationWithPasswordMismatch
+2026-04-13 15:55:34 INFO  RegisterAccountTestCases:21 - Clearing session and navigating to base URL before each test
+2026-04-13 15:55:36 INFO  ExtentReportListner:53 - Test started: verifyRegistrationWithAllFieldsEmpty
+2026-04-13 15:55:36 INFO  RegisterAccountTestCases:86 - TC-R04: Verify registration with all fields empty
+2026-04-13 15:55:40 INFO  RegisterAccountTestCases:94 - TC-R04 PASSED
+2026-04-13 15:55:40 INFO  ExtentReportListner:59 - Test PASSED: verifyRegistrationWithAllFieldsEmpty
+2026-04-13 15:55:40 INFO  RegisterAccountTestCases:21 - Clearing session and navigating to base URL before each test
+2026-04-13 15:55:42 INFO  ExtentReportListner:53 - Test started: verifyRegistrationWithInvalidEmailFormat
+2026-04-13 15:55:42 INFO  RegisterAccountTestCases:100 - TC-R05: Verify registration with invalid email format
+2026-04-13 15:55:44 INFO  RegisterAccountTestCases:108 - TC-R05 PASSED
+2026-04-13 15:55:44 INFO  ExtentReportListner:59 - Test PASSED: verifyRegistrationWithInvalidEmailFormat
+2026-04-13 15:55:44 INFO  RegisterAccountTestCases:21 - Clearing session and navigating to base URL before each test
+2026-04-13 15:55:47 INFO  ExtentReportListner:53 - Test started: verifyRegistrationWithoutPrivacyPolicy
+2026-04-13 15:55:47 INFO  RegisterAccountTestCases:114 - TC-R06: Verify registration without accepting privacy policy
+2026-04-13 15:55:52 ERROR ExtentReportListner:65 - Test FAILED: verifyRegistrationWithoutPrivacyPolicy | Reason: TC-R06 FAILED: Should not register without policy agreement expected [true] but found [false]
+2026-04-13 15:55:52 INFO  ExtentReportListner:70 - Screenshot captured for failed test: verifyRegistrationWithoutPrivacyPolicy
+2026-04-13 15:55:52 INFO  RegisterAccountTestCases:21 - Clearing session and navigating to base URL before each test
+2026-04-13 15:55:54 INFO  ExtentReportListner:53 - Test started: verifyRegistrationWithWeakPassword
+2026-04-13 15:55:54 INFO  RegisterAccountTestCases:133 - TC-R07: Verify registration with weak/short password
+2026-04-13 15:55:57 INFO  RegisterAccountTestCases:143 - TC-R07 PASSED
+2026-04-13 15:55:57 INFO  ExtentReportListner:59 - Test PASSED: verifyRegistrationWithWeakPassword
+2026-04-13 15:55:57 INFO  SuiteSetup:49 - ===== Test Teardown =====
+2026-04-13 15:55:57 INFO  SuiteSetup:19 - ===== Test Setup Started =====
+2026-04-13 15:55:57 INFO  SuiteSetup:23 - Browser from config: chrome
+2026-04-13 15:55:58 INFO  SuiteSetup:26 - Driver initialized successfully.
+2026-04-13 15:55:58 INFO  SuiteSetup:29 - Pages initialized successfully.
+2026-04-13 15:56:04 INFO  SuiteSetup:32 - URL launched: https://ecommerce-playground.lambdatest.io/
+2026-04-13 15:56:04 INFO  SuiteSetup:33 - ===== Test Setup Completed =====
+2026-04-13 15:56:04 INFO  LoginTestCases:19 - Clearing session and navigating to base URL before each test
+2026-04-13 15:56:06 INFO  ExtentReportListner:53 - Test started: verifyLoginPageElementsAreVisible
+2026-04-13 15:56:06 INFO  LoginTestCases:30 - TC-L01: Verify all login page elements are visible
+2026-04-13 15:56:10 INFO  LoginTestCases:42 - TC-L01 PASSED - All login page elements are visible
+2026-04-13 15:56:10 INFO  ExtentReportListner:59 - Test PASSED: verifyLoginPageElementsAreVisible
+2026-04-13 15:56:10 INFO  LoginTestCases:19 - Clearing session and navigating to base URL before each test
+2026-04-13 15:56:12 INFO  ExtentReportListner:53 - Test started: verifySuccessfulLogin
+2026-04-13 15:56:12 INFO  LoginTestCases:50 - TC-L02: Verify successful login with valid credentials
+2026-04-13 15:56:16 INFO  LoginTestCases:59 - TC-L02 PASSED
+2026-04-13 15:56:16 INFO  ExtentReportListner:59 - Test PASSED: verifySuccessfulLogin
+2026-04-13 15:56:16 INFO  LoginTestCases:19 - Clearing session and navigating to base URL before each test
+2026-04-13 15:56:18 INFO  ExtentReportListner:53 - Test started: verifySuccessfulLogout
+2026-04-13 15:56:18 INFO  LoginTestCases:64 - TC-L03: Verify successful login and logout
+2026-04-13 15:56:24 INFO  LoginTestCases:82 - TC-L03 PASSED
+2026-04-13 15:56:24 INFO  ExtentReportListner:59 - Test PASSED: verifySuccessfulLogout
+2026-04-13 15:56:24 INFO  LoginTestCases:19 - Clearing session and navigating to base URL before each test
+2026-04-13 15:56:26 INFO  ExtentReportListner:53 - Test started: verifyLoginWithInvalidCredentials
+2026-04-13 15:56:26 INFO  LoginTestCases:90 - TC-L04: Verify login with invalid credentials
+2026-04-13 15:56:29 INFO  LoginTestCases:99 - TC-L04 PASSED - Error message validated
+2026-04-13 15:56:29 INFO  ExtentReportListner:59 - Test PASSED: verifyLoginWithInvalidCredentials
+2026-04-13 15:56:29 INFO  LoginTestCases:19 - Clearing session and navigating to base URL before each test
+2026-04-13 15:56:32 INFO  ExtentReportListner:53 - Test started: verifyLoginWithWrongPassword
+2026-04-13 15:56:32 INFO  LoginTestCases:105 - TC-L05: Verify login with correct email but wrong password
+2026-04-13 15:56:35 INFO  LoginTestCases:112 - TC-L05 PASSED
+2026-04-13 15:56:35 INFO  ExtentReportListner:59 - Test PASSED: verifyLoginWithWrongPassword
+2026-04-13 15:56:35 INFO  LoginTestCases:19 - Clearing session and navigating to base URL before each test
+2026-04-13 15:56:36 INFO  ExtentReportListner:53 - Test started: verifyLoginWithEmptyEmail
+2026-04-13 15:56:36 INFO  LoginTestCases:120 - TC-L06: Verify login with empty email
+2026-04-13 15:56:42 INFO  LoginTestCases:130 - TC-L06 PASSED - Browser validation triggered for empty email
+2026-04-13 15:56:42 INFO  ExtentReportListner:59 - Test PASSED: verifyLoginWithEmptyEmail
+2026-04-13 15:56:42 INFO  LoginTestCases:19 - Clearing session and navigating to base URL before each test
+2026-04-13 15:56:45 INFO  ExtentReportListner:53 - Test started: verifyLoginWithEmptyPassword
+2026-04-13 15:56:45 INFO  LoginTestCases:136 - TC-L07: Verify login with empty password
+2026-04-13 15:56:49 INFO  LoginTestCases:146 - TC-L07 PASSED
+2026-04-13 15:56:49 INFO  ExtentReportListner:59 - Test PASSED: verifyLoginWithEmptyPassword
+2026-04-13 15:56:49 INFO  LoginTestCases:19 - Clearing session and navigating to base URL before each test
+2026-04-13 15:56:51 INFO  ExtentReportListner:53 - Test started: verifyLoginWithBothFieldsEmpty
+2026-04-13 15:56:51 INFO  LoginTestCases:152 - TC-L08: Verify login with both email and password empty
+2026-04-13 15:56:55 INFO  LoginTestCases:162 - TC-L08 PASSED
+2026-04-13 15:56:55 INFO  ExtentReportListner:59 - Test PASSED: verifyLoginWithBothFieldsEmpty
+2026-04-13 15:56:55 INFO  LoginTestCases:19 - Clearing session and navigating to base URL before each test
+2026-04-13 15:56:57 INFO  ExtentReportListner:53 - Test started: verifyLoginWithInvalidEmailFormat
+2026-04-13 15:56:57 INFO  LoginTestCases:168 - TC-L09: Verify login with invalid email format
+2026-04-13 15:57:01 INFO  LoginTestCases:178 - TC-L09 PASSED
+2026-04-13 15:57:01 INFO  ExtentReportListner:59 - Test PASSED: verifyLoginWithInvalidEmailFormat
+2026-04-13 15:57:01 INFO  SuiteSetup:49 - ===== Test Teardown =====
+2026-04-13 15:57:02 INFO  ExtentReportListner:45 - Suite finished: EcommerceSuite. Extent Report flushed.

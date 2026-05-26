@@ -1,0 +1,8 @@
+2026-05-26 20:43:05 INFO  Utils:112 - [TestNG] Running:
+  C:\Study\Qspiders\Automation\Zerodha\ds\Zerodha\testng.xml
+
+2026-05-26 20:43:09 INFO  Login_Test:23 - ***************Login Started******************
+2026-05-26 20:43:09 INFO  Login_Test:32 - User id enter sucessfully
+2026-05-26 20:43:09 INFO  Login_Test:34 - Passwrod enter sucessfully
+2026-05-26 20:43:09 INFO  Login_Test:36 - Clicked on Login Button sucessfully
+2026-05-26 20:43:34 INFO  Login_Test:12 - *****************************Buy Flow started******************************

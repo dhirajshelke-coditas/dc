@@ -1,0 +1,30 @@
+2026-05-29 16:25:08 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\Coditas-Admin\Downloads\Selenium1\Zerodha\testng.xml
+
+2026-05-29 16:25:12 INFO  Login_Test:29 - *************** Login Started ******************
+2026-05-29 16:25:12 INFO  Login_Test:44 - User ID entered successfully
+2026-05-29 16:25:13 INFO  Login_Test:50 - Password entered successfully
+2026-05-29 16:25:13 INFO  Login_Test:53 - Clicked on Login button successfully
+2026-05-29 16:25:28 INFO  Login_Test:60 - OTP entered successfully
+2026-05-29 16:25:29 INFO  Login_Test:68 - Login successful
+2026-05-29 16:25:29 INFO  Login_Test:84 - *************** Login Ended Successfully *******************
+2026-05-29 16:25:29 INFO  Login_Test:76 - TEST PASSED: login
+2026-05-29 16:25:29 INFO  Login_Test:22 - ***** Combination 1 started *****
+2026-05-29 16:25:30 INFO  Login_Test:98 - Searched stock successfully
+2026-05-29 16:25:30 INFO  Login_Test:106 - Stock hovered successfully
+2026-05-29 16:25:31 INFO  Login_Test:112 - Clicked on the Buy button successfully
+2026-05-29 16:25:31 INFO  Login_Test:119 - Navigated to Regular successfully
+2026-05-29 16:25:31 INFO  Login_Test:126 - Longterm selected successfully
+2026-05-29 16:25:31 INFO  Login_Test:133 - Quantity set successfully
+2026-05-29 16:25:31 INFO  Login_Test:28 - Buy form opened for stock: Coal | qty: 1
+2026-05-29 16:25:31 INFO  Login_Test:166 - Market option selected successfully
+2026-05-29 16:25:31 INFO  Login_Test:35 - Order type set to: MARKET
+2026-05-29 16:25:31 INFO  Login_Test:196 - Advanced options are hidden. Clicking to show them.
+2026-05-29 16:25:31 INFO  Login_Test:198 - Clicked on Advanced options successfully
+2026-05-29 16:25:32 INFO  Login_Test:211 - Day selected successfully
+2026-05-29 16:25:32 INFO  Login_Test:71 - Validity set to: DAY
+2026-05-29 16:25:32 INFO  Login_Test:225 - Buy stock button clicked successfully
+2026-05-29 16:25:32 INFO  Login_Test:94 - Order submitted
+2026-05-29 16:25:33 INFO  Login_Test:235 - Clicked on cross successfully
+2026-05-29 16:25:39 ERROR Login_Test:73 - TEST FAILED: regular_Longterm_Market_Day
+2026-05-29 16:25:39 INFO  Login_Test:33 - ***** Combination 2 started *****

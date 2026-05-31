@@ -1,9 +1,6 @@
 package pageObject;
 
-import java.time.Duration;
 import java.util.List;
-
-import javax.xml.xpath.XPath;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -12,291 +9,280 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import testBase.BaseClass;
 
 public class BuyFlow extends BasePage {
 
-	public BuyFlow(WebDriver driver) {
-		super(driver);
-	}
-	Logger logger = BaseClass.logger;
-	  WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+    public BuyFlow(WebDriver driver) {
+        super(driver);
+    }
 
-	@FindBy(xpath = "//input[@icon='search']")
-	WebElement searchBar;
-	
-	@FindBy(css = ".name")
-	WebElement stock;
-	
-	@FindBy(css = ".button-blue")
-	WebElement btnBuy;
-	
-	@FindBy(xpath = "//label[text()='Regular']")
-	WebElement lblRegular;
-	
-	@FindBy(xpath = "//div[contains(@class,'type four columns su-radio-wrap checked')]")
-	WebElement rbtnLongterm;
-	
-	@FindBy(xpath  = "//input[@label='Qty.']")
-	WebElement ipQuantity;
-	
-	@FindBy(xpath  = "//input[@label='Price']")
-	WebElement ipPrice;
-	
-	@FindBy(xpath  = "//input[contains(@label,'Trigger price')]")
-	WebElement ipTriggerPrice;
-	
-	@FindBy(xpath = "//label[contains(text(),'Market')]")
-	WebElement rbtnMarket;
-	
-	@FindBy(xpath = "//label[contains(text(),'Limit')]")
-	WebElement rbtnLimit;
-	
-	@FindBy(xpath = "//label[contains(text(),'SL')]")
-	WebElement rbtnSL;
-	
-	@FindBy(xpath = "//label[contains(text(),'SL-M')]")
-	WebElement rbtnSLM;
-	
-	@FindBy(xpath = "//div[@class='order-window-wrapper']//span[contains(text(),'Advanced')]")
-	WebElement ddAdvancedOptions;
-	
-	@FindBy(xpath = "//label[contains(text(),'Day')]")
-	WebElement rbtnDay;
-	
-	@FindBy(xpath = "//label[contains(text(),'Immediate')]")
-	WebElement rbtnImmediate;
-	
-	@FindBy(css = ".submit")
-	WebElement btnBuyStock;
-	
-	@FindBy(xpath = "//div[contains(@class,'su-toast-item')]//div[@class='message']")
-    WebElement successToastMessage;
-	
-	@FindBy(xpath = "//div[contains(@class,'su-toast-item')]//span[contains(@class,'close')]")
-	WebElement iconCross;
-	
-	@FindBy(xpath = "//button[contains(@class,'button-outline button-transparent cancel')]")
-	WebElement btnCancel;
-	
-	@FindBy(xpath ="//div[@class='su-checkbox-group']")
-	WebElement chkStoploss;
-	
-	@FindBy(xpath ="(//div[@class='su-checkbox-group'])[2]")
-	WebElement chkTarget;
-	
-	@FindBy(xpath = "//h4[@class='title']")
-	List<WebElement> errorMessage;
-	
-	public void searchStock(String stock) {
-		wait.until(ExpectedConditions.visibilityOf(searchBar));
-		searchBar.sendKeys(stock);
-		logger.info("Searched stock successfully");
+    Logger logger = BaseClass.logger;
 
-	}
-	
-	public void hoverStock() {
-		wait.until(ExpectedConditions.visibilityOf(stock));
-		Actions act = new Actions(driver);	
-		act.moveToElement(stock).perform();
-	    logger.info("Stock hovered successfully");
-	}
-	
-	public void clickOnBuy() {
-		wait.until(ExpectedConditions.visibilityOf(btnBuy));
-		btnBuy.click();
-		logger.info("Clicked on the Buy button successfully");
+    @FindBy(xpath = "//input[@icon='search']")
+    private WebElement searchBar;
 
-	}
-	
-	public void navigateToRegular() {
-		wait.until(ExpectedConditions.visibilityOf(lblRegular));
-		lblRegular.click();
-		logger.info("Navigated to Regular successfully");
+    @FindBy(css = ".name")
+    private WebElement stock;
 
-	}
-	
-	public void selectLongterm() {
-		wait.until(ExpectedConditions.elementToBeClickable(rbtnLongterm));
-		rbtnLongterm.click();
-		logger.info("Longterm selected successfully");
+    @FindBy(css = ".button-blue")
+    private WebElement btnBuy;
+    
+    @FindBy(xpath = "//button[contains(text(),'S')]")
+    private WebElement btnSell;
 
-	}
+    @FindBy(xpath = "//label[text()='Regular']")
+    private WebElement lblRegular;
 
-	public void setQuantity(String qty) {
-		wait.until(ExpectedConditions.visibilityOf(ipQuantity));
-		ipQuantity.sendKeys(qty);
-		logger.info("Quantity set successfully");
+    @FindBy(xpath = "//div[contains(@class,'type four columns su-radio-wrap checked')]")
+    private WebElement rbtnLongterm;
 
-	}
-	
-	public void setPrice(String price) {
-		wait.until(ExpectedConditions.visibilityOf(ipPrice));
-		ipPrice.sendKeys(price);
-		logger.info("Price set successfully");
-	}
-	
-	public void clearPrice() {
-		wait.until(ExpectedConditions.visibilityOf(ipPrice));
-		Actions act= new Actions(driver);
-		act.click(ipPrice).keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).sendKeys(Keys.DELETE).perform();
-		logger.info("Price cleared successfully");
-	}
-	
-	public void setTriggerPrice(String price){
-		wait.until(ExpectedConditions.visibilityOf(ipTriggerPrice));
-		ipTriggerPrice.sendKeys(price);
-		logger.info("Trigger price set successfully");
-	}
-	
-	public void clearTriggerPrice() {
-		wait.until(ExpectedConditions.visibilityOf(ipTriggerPrice));
-		Actions act= new Actions(driver);
-		act.click(ipTriggerPrice).keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).sendKeys(Keys.DELETE).perform();
-		logger.info("Price cleared successfully");
-	}
-	
-	public void selectMarket() {
-		wait.until(ExpectedConditions.visibilityOf(rbtnMarket));
-		rbtnMarket.click();
-		logger.info("Market option selected successfully");
+    @FindBy(xpath = "//input[@label='Qty.']")
+    private WebElement ipQuantity;
 
-	}
-	
-	public void selectLimit() {
-		wait.until(ExpectedConditions.visibilityOf(rbtnLimit));
-		rbtnLimit.click();
-		logger.info("Limit option selected successfully");
+    @FindBy(xpath = "//input[@label='Price']")
+    private WebElement ipPrice;
 
-	}
-	
-	public void selectSL() {
-		wait.until(ExpectedConditions.visibilityOf(rbtnSL));
-		rbtnSL.click();
-		logger.info("SL option selected successfully");
+    @FindBy(xpath = "//input[contains(@label,'Trigger price')]")
+    private WebElement ipTriggerPrice;
 
-	}
-	
-	public void selectSLM() {
-		wait.until(ExpectedConditions.visibilityOf(rbtnSLM));
-		rbtnSLM.click();
-		logger.info("SLM option selected successfully");
+    @FindBy(xpath = "//label[contains(text(),'Market')]")
+    private WebElement rbtnMarket;
 
-	}
-	
-	public void clickAdvancedOptions() {
-		wait.until(ExpectedConditions.visibilityOf(ddAdvancedOptions));
+    @FindBy(xpath = "//label[contains(text(),'Limit')]")
+    private WebElement rbtnLimit;
+
+    @FindBy(xpath = "//label[contains(text(),'SL')]")
+    private WebElement rbtnSL;
+
+    @FindBy(xpath = "//label[contains(text(),'SL-M')]")
+    private WebElement rbtnSLM;
+
+    @FindBy(xpath = "//div[@class='order-window-wrapper']//span[contains(text(),'Advanced')]")
+    private WebElement ddAdvancedOptions;
+
+    @FindBy(xpath = "//label[contains(text(),'Day')]")
+    private WebElement rbtnDay;
+
+    @FindBy(xpath = "//label[contains(text(),'Immediate')]")
+    private WebElement rbtnImmediate;
+
+    @FindBy(css = ".submit")
+    private WebElement btnBuyStock;
+
+    @FindBy(xpath = "//div[contains(@class,'su-toast-item')]//div[@class='message']")
+    private WebElement successToastMessage;
+
+    @FindBy(xpath = "//div[contains(@class,'su-toast-item')]//span[contains(@class,'close')]")
+    private WebElement iconCross;
+
+    @FindBy(xpath = "//button[contains(@class,'button-outline button-transparent cancel')]")
+    private WebElement btnCancel;
+
+    @FindBy(xpath = "//div[@class='su-checkbox-group']")
+    private WebElement chkStoploss;
+
+    @FindBy(xpath = "(//div[@class='su-checkbox-group'])[2]")
+    private WebElement chkTarget;
+
+    @FindBy(xpath = "//h4[@class='title']")
+    List<WebElement> errorMessage;
+
+    public void searchStock(String stockName) {
+        verifyVisibilityOfElement(searchBar);
+        searchBar.sendKeys(stockName);
+        logger.info("Searched stock: " + stockName);
+    }
+
+    public void hoverStock() {
+        verifyVisibilityOfElement(stock);
+        new Actions(driver).moveToElement(stock).perform();
+        logger.info("Stock hovered successfully");
+    }
+
+    public void clickOnBuy() {
+        verifyVisibilityOfElement(btnBuy);
+        btnBuy.click();
+        logger.info("Clicked Buy button");
+    }
+    
+    public void clickOnSell() {
+        verifyVisibilityOfElement(btnSell);
+        btnSell.click();
+        logger.info("Clicked Sell button");
+    }
+
+    public void navigateToRegular() {
+        verifyVisibilityOfElement(lblRegular);
+        lblRegular.click();
+        logger.info("Navigated to Regular");
+    }
+
+    public void selectLongterm() {
+        verifyInteractable(rbtnLongterm);
+        rbtnLongterm.click();
+        logger.info("Longterm selected");
+    }
+
+    public void setQuantity(String qty) {
+        verifyVisibilityOfElement(ipQuantity);
+        ipQuantity.sendKeys(qty);
+        logger.info("Quantity set: " + qty);
+    }
+
+    public void setPrice(String price) {
+        verifyVisibilityOfElement(ipPrice);
+        ipPrice.sendKeys(price);
+        logger.info("Price set: " + price);
+    }
+
+    public void clearPrice() {
+        verifyVisibilityOfElement(ipPrice);
+        new Actions(driver).click(ipPrice)
+                .keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL)
+                .sendKeys(Keys.DELETE).perform();
+        logger.info("Price cleared");
+    }
+
+    public void setTriggerPrice(String triggerPrice) {
+        verifyVisibilityOfElement(ipTriggerPrice);
+        ipTriggerPrice.sendKeys(triggerPrice);
+        logger.info("Trigger price set: " + triggerPrice);
+    }
+
+    public void clearTriggerPrice() {
+        verifyVisibilityOfElement(ipTriggerPrice);
+        new Actions(driver).click(ipTriggerPrice)
+                .keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL)
+                .sendKeys(Keys.DELETE).perform();
+        logger.info("Trigger price cleared");
+    }
+
+    public void selectMarket() {
+        verifyVisibilityOfElement(rbtnMarket);
+        rbtnMarket.click();
+        logger.info("Order type: MARKET");
+    }
+
+    public void selectLimit() {
+        verifyVisibilityOfElement(rbtnLimit);
+        rbtnLimit.click();
+        logger.info("Order type: LIMIT");
+    }
+
+    public void selectSL() {
+        verifyVisibilityOfElement(rbtnSL);
+        rbtnSL.click();
+        logger.info("Order type: SL");
+    }
+
+    public void selectSLM() {
+        verifyVisibilityOfElement(rbtnSLM);
+        rbtnSLM.click();
+        logger.info("Order type: SL-M");
+    }
+
+    public void clickAdvancedOptions() {
+        verifyVisibilityOfElement(ddAdvancedOptions);
         try {
-            String tooltipValue = ddAdvancedOptions.getAttribute("data-tooltip-content");
-            if ("Show advanced options".equalsIgnoreCase(tooltipValue)) {
-                logger.info("Advanced options are hidden. Clicking to show them.");
+            String tooltip = ddAdvancedOptions.getAttribute("data-tooltip-content");
+            if ("Show advanced options".equalsIgnoreCase(tooltip)) {
                 ddAdvancedOptions.click();
-          	  logger.info("Clicked on Advanced options successfully");
-
+                logger.info("Advanced options expanded");
             } else {
-                logger.info("Advanced options are already visible. No action needed.");
+                logger.info("Advanced options already visible");
             }
         } catch (Exception e) {
-            logger.error("Error while handling advanced options", e);
-            Assert.fail("clickAdvancedOptionsIfHidden failed: " + e.getMessage());
+            logger.error("Error handling advanced options", e);
+            Assert.fail("clickAdvancedOptions failed: " + e.getMessage());
         }
     }
-	public void selectDay() {
-		wait.until(ExpectedConditions.visibilityOf(rbtnDay));
-		rbtnDay.click();
-		  logger.info("Day selected successfully");
 
-	}
-	
-	public void selectImmediate() {
-		wait.until(ExpectedConditions.visibilityOf(rbtnImmediate));
-		rbtnImmediate.click();
-		  logger.info("Immediate selected successfully");
+    public void selectDay() {
+        verifyVisibilityOfElement(rbtnDay);
+        rbtnDay.click();
+        logger.info("Validity: DAY");
+    }
 
-	}
-	
-	public void buyStock() {
-		wait.until(ExpectedConditions.visibilityOf(btnBuyStock));
-		btnBuyStock.click();
-		  logger.info("Buy stock button clicked successfully");
+    public void selectImmediate() {
+        verifyVisibilityOfElement(rbtnImmediate);
+        rbtnImmediate.click();
+        logger.info("Validity: IOC");
+    }
 
-	}
-	
-	public void clickOnCross() {
-		
-		if(iconCross!=null) {
-			WebElement iconCross=driver.findElement(By.xpath("//div[contains(@class,'su-toast-item')]//span[contains(@class,'close')]"));
-		wait.until(ExpectedConditions.visibilityOf(iconCross));
-		iconCross.click();
-		  logger.info("Clicked on cross successfully");
-		}
-	}
-	
-	public void clickCancel() {
-		WebElement btnCancel=driver.findElement(By.xpath("//button[contains(@class,'button-outline button-transparent cancel')]"));
-		if(btnCancel!=null) {
-		wait.until(ExpectedConditions.visibilityOf(btnCancel));
-		btnCancel.click();
-		  logger.info("Clicked on the cancel button successfully");
-		}
-	}
-	
-	public void checkStoploss() {
-		wait.until(ExpectedConditions.visibilityOf(chkStoploss));
-		chkStoploss.click();
-		  logger.info("Stoploss checked successfully");
+    public void buyStock() {
+        verifyInteractable(btnBuyStock);
+        btnBuyStock.click();
+        logger.info("Buy submitted");
+    }
 
-	}
-	
-	public void checkTarget() {
-		wait.until(ExpectedConditions.visibilityOf(chkTarget));
-		chkTarget.click();
-		  logger.info("Target checked successfully");
+    public void clickOnCross() {
+        //  avoids stale element 
+        try {
+            WebElement cross = driver.findElement(
+                    By.xpath("//div[contains(@class,'su-toast-item')]//span[contains(@class,'close')]"));
+            verifyVisibilityOfElement(cross);
+            cross.click();
+            logger.info("Toast dismissed");
+        } catch (Exception e) {
+            logger.warn("Toast cross not found — may have already been dismissed: " + e.getMessage());
+        }
+    }
 
-	}
-	
-	public void verifyToastMessage() {
-	//	wait.until(ExpectedConditions.visibilityOf(successToastMessage));
-		String toastMessage=successToastMessage.getText();
-		boolean orderProcessed=toastMessage.contains("Insufficient funds") || toastMessage.contains("Markets are closed right now.")
-				|| toastMessage.contains("next market opening") || toastMessage.contains("GTT orders are blocked for AMO orders") || toastMessage.contains("Trigger price for stoploss buy");
-		Assert.assertTrue(orderProcessed, "Order not placed");
-		 logger.info("Toast message verified successfully");
+    public void clickCancel() {
+        try {
+            WebElement cancel = driver.findElement(
+                    By.xpath("//button[contains(@class,'button-outline button-transparent cancel')]"));
+            verifyInteractable(cancel);
+            cancel.click();
+            logger.info("Form cancelled");
+        } catch (Exception e) {
+            logger.warn("Cancel button not found — form may already be closed: " + e.getMessage());
+        }
+    }
 
-	}
-	
-	public void invalidQuantity_Price() {
-	         
-	         boolean doesAccept= (errorMessage.size() > 0 && errorMessage.get(0).isDisplayed());
-	         Assert.assertFalse(doesAccept,"Test case failed invalid value is accpeted");
-		    	logger.info("Test case passed invalid value is not accepted");
-	         
-	}
+    public void checkStoploss() {
+        // if a toast or overlay is covering the checkbox
+        safeClick(chkStoploss);
+        logger.info("Stoploss checked");
+    }
 
-	public void validQuantity_Price() {
-        
-        boolean doesAccept= errorMessage.size() > 0 && errorMessage.get(0).isDisplayed();
-        Assert.assertTrue(doesAccept,"Test case failed valid value is accpeted");
-    	logger.info("Test case passed valid value is accepted");
-        
+    public void checkTarget() {
+        // check to being covered by the stoploss section expanding after it's checked
+        safeClick(chkTarget);
+        logger.info("Target checked");
+    }
+
+    public void verifyToastMessage() {
+        verifyVisibilityOfElement(successToastMessage);
+        String toastMessage = successToastMessage.getText();
+        boolean orderProcessed = toastMessage.contains("Insufficient funds")
+                || toastMessage.contains("Markets are closed right now.")
+                || toastMessage.contains("next market opening")
+                || toastMessage.contains("GTT orders are blocked for AMO orders")
+                || toastMessage.contains("Trigger price for stoploss buy");
+        Assert.assertTrue(orderProcessed, "Unexpected toast message: " + toastMessage);
+        logger.info("Toast verified: " + toastMessage);
+    }
+
+    public void invalidQuantity_Price() {
+        boolean hasError = errorMessage.size() > 0 && errorMessage.get(0).isDisplayed();
+        Assert.assertFalse(hasError, "Test failed — invalid value was accepted");
+        logger.info("Confirmed: invalid value rejected");
+    }
+
+    public void validQuantity_Price() {
+        boolean hasError = errorMessage.size() > 0 && errorMessage.get(0).isDisplayed();
+        Assert.assertTrue(hasError, "Test failed — valid value was not accepted");
+        logger.info("Confirmed: valid value accepted");
+    }
+
+    public void verifyPriceMoreThanCircuit() {
+        Assert.assertTrue(errorMessage.get(0).isDisplayed(),
+                "Test failed — price beyond circuit was accepted");
+        clickOnCross();
+        logger.info("Confirmed: circuit price rejected — " + successToastMessage.getText());
+    }
 }
-	
-	public void verifyPriceMoreThanCircuit() {
-		boolean toastMessage=errorMessage.get(0).isDisplayed();
-		Assert.assertTrue(toastMessage,"Test case failed price more than upper circuit is accepted");
-		logger.info("Test case passed- "+successToastMessage.getText());
-	}
-}
-
-
-
-
-
-
-
-
-

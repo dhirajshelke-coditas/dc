@@ -15,94 +15,65 @@ public class BuyFlowHelper {
         this.buyflow   = new BuyFlow(driver);
         this.orderPage = new OrderDetailsPage(driver);
     }
-
-    // Step 1 - Search, hover, open buy form
-
-    public void openBuyForm(String stockName, String qty) {
+    
+    public void buyOrder(boolean sellIsEnabled, String stockName, String orderType, String qty, boolean priceIsEnabled, String price,
+    		boolean triggerPriceIsEnabled, String triggerPrice, String validity, boolean stopLossTargetChk) throws InterruptedException {
+    	
         buyflow.searchStock(stockName);
         buyflow.hoverStock();
+        if(sellIsEnabled) {
+        buyflow.clickOnSell();
+        }
+        else {
         buyflow.clickOnBuy();
+        }
         buyflow.navigateToRegular();
         buyflow.selectLongterm();
-        buyflow.setQuantity(qty);
-        logger.info("Buy form opened for stock: " + stockName + " | qty: " + qty);
-    }
-
-    // STEP 2a — Set order type: Market
-    
-    public void setMarketOrder() {
-        buyflow.selectMarket();
-        logger.info("Order type set to: MARKET");
-    }
-
-    // Step 2b - Set order type: Limit
-
-    public void setLimitOrder(String price) {
-        buyflow.selectLimit();
+        switch(orderType.toLowerCase()) {
+        case("market"):  buyflow.selectMarket(); logger.info("Order type set to: MARKET"); break;
+        case("limit"):  buyflow.selectLimit(); logger.info("Order type set to: LIMIT"); break;
+        case("sl"):  buyflow.selectSL(); logger.info("Order type set to: SL"); break;
+        case("slm"):  buyflow.selectSLM(); logger.info("Order type set to: SL-M"); break;
+        default: throw new IllegalArgumentException("Invalid order type: " + orderType);
+        }
+        buyflow.setQuantity(qty);;
+        
+        if(priceIsEnabled) {
         buyflow.clearPrice();
         buyflow.setPrice(price);
-        logger.info("Order type set to: LIMIT | price: " + price);
-    }
-
-    // Step 2c - Set order type: SL
-    public void setSLOrder(String price, String triggerPrice) {
-        buyflow.selectSL();
-        buyflow.clearPrice();
-        buyflow.setPrice(price);
+        }
+        
+        if(triggerPriceIsEnabled) {
         buyflow.clearTriggerPrice();
         buyflow.setTriggerPrice(triggerPrice);
-        logger.info("Order type set to: SL | price: " + price + " | trigger: " + triggerPrice);
-    }
-
-    // Step 2d - Set order type: SL-M
-    
-    public void setSLMOrder(String triggerPrice) {
-        buyflow.selectSLM();
-        buyflow.clearTriggerPrice();
-        buyflow.setTriggerPrice(triggerPrice);
-        logger.info("Order type set to: SL-M | trigger: " + triggerPrice);
-    }
-
-    // Step 3a - Set validity: Day
-
-    public void setDayValidity() {
-        buyflow.clickAdvancedOptions();
-        buyflow.selectDay();
-        logger.info("Validity set to: DAY");
-    }
-
-    // Step 3b - Set validity: Immediate (IOC)
-
-    public void setImmediateValidity() {
-        buyflow.clickAdvancedOptions();
-        buyflow.selectImmediate();
-        logger.info("Validity set to: IOC");
-    }
-
-    // Step 4 - Enable Stoploss + Target checkboxes
-
-    public void enableStoplossAndTarget() {
-        buyflow.checkStoploss();
-        buyflow.checkTarget();
-        logger.info("Stoploss and Target enabled");
-    }
-
-    // Step 5 - Submit the order
-
-    public void submitOrder() {
+        }
+        
+        if (!stopLossTargetChk) {
+            buyflow.clickAdvancedOptions();
+            switch (validity.toLowerCase()) {
+                case "day":       buyflow.selectDay();       break;
+                case "immediate": buyflow.selectImmediate(); break;
+                default: throw new IllegalArgumentException("Invalid validity: " + validity);
+            }
+        } else {
+            buyflow.checkStoploss();
+            buyflow.checkTarget();
+        }
         buyflow.buyStock();
-        logger.info("Order submitted");
+
     }
+
 
     // Teardown 1 - Dismiss toasts >> cancel >> verify order
-
+// Changes are to done when the market is closed or opened
+    
     public void dismissAndVerify(String qty, String price, String trigger,
                                  String orderType, String productType,
                                  String validity, String stockName) throws InterruptedException {
-        buyflow.clickOnCross();
+      //  buyflow.clickOnCross();
         Thread.sleep(500);
         buyflow.clickOnCross();
-        buyflow.clickCancel();
+     //   buyflow.clickCancel();
         Thread.sleep(500);
         orderPage.clickOrderStatus();
         orderPage.verifyOrder(qty, price, trigger, orderType, productType, validity, stockName);
@@ -118,8 +89,8 @@ public class BuyFlowHelper {
                                                    String stoploss, String target) throws InterruptedException {
         buyflow.clickOnCross();
         Thread.sleep(500);
-        buyflow.clickOnCross();
-        Thread.sleep(500);
+//        buyflow.clickOnCross();
+//        Thread.sleep(500);
         orderPage.clickOrderStatus();
         orderPage.verifyStoplossTargetOrder(qty, price, trigger, orderType, productType,
                 validity, stockName, stoploss, target);
@@ -127,20 +98,5 @@ public class BuyFlowHelper {
         logger.info("Stoploss/Target order verified: " + orderType + " | stoploss: " + stoploss + " | target: " + target);
     }
 
-    // Teardown 3 - Verify invalid input then cancel
 
-    public void verifyInvalidAndCancel() {
-        buyflow.invalidQuantity_Price();
-        buyflow.clickCancel();
-        logger.info("Invalid input verified");
-    }
-
-    // Teardown 4 - Verify circuit breach then dismiss and cancel
-
-    public void verifyCircuitAndCancel() {
-        buyflow.verifyPriceMoreThanCircuit();
-        buyflow.clickOnCross();
-        buyflow.clickCancel();
-        logger.info("Circuit break verified");
-    }
 }

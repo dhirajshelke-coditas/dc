@@ -1,30 +1,456 @@
-2026-05-29 16:25:08 INFO  Utils:112 - [TestNG] Running:
-  C:\Users\Coditas-Admin\Downloads\Selenium1\Zerodha\testng.xml
+2026-05-31 14:53:56 INFO  Utils:112 - [TestNG] Running:
+  C:\Study\Qspiders\Automation\Zerodha\ds\Zerodha\testng.xml
 
-2026-05-29 16:25:12 INFO  Login_Test:29 - *************** Login Started ******************
-2026-05-29 16:25:12 INFO  Login_Test:44 - User ID entered successfully
-2026-05-29 16:25:13 INFO  Login_Test:50 - Password entered successfully
-2026-05-29 16:25:13 INFO  Login_Test:53 - Clicked on Login button successfully
-2026-05-29 16:25:28 INFO  Login_Test:60 - OTP entered successfully
-2026-05-29 16:25:29 INFO  Login_Test:68 - Login successful
-2026-05-29 16:25:29 INFO  Login_Test:84 - *************** Login Ended Successfully *******************
-2026-05-29 16:25:29 INFO  Login_Test:76 - TEST PASSED: login
-2026-05-29 16:25:29 INFO  Login_Test:22 - ***** Combination 1 started *****
-2026-05-29 16:25:30 INFO  Login_Test:98 - Searched stock successfully
-2026-05-29 16:25:30 INFO  Login_Test:106 - Stock hovered successfully
-2026-05-29 16:25:31 INFO  Login_Test:112 - Clicked on the Buy button successfully
-2026-05-29 16:25:31 INFO  Login_Test:119 - Navigated to Regular successfully
-2026-05-29 16:25:31 INFO  Login_Test:126 - Longterm selected successfully
-2026-05-29 16:25:31 INFO  Login_Test:133 - Quantity set successfully
-2026-05-29 16:25:31 INFO  Login_Test:28 - Buy form opened for stock: Coal | qty: 1
-2026-05-29 16:25:31 INFO  Login_Test:166 - Market option selected successfully
-2026-05-29 16:25:31 INFO  Login_Test:35 - Order type set to: MARKET
-2026-05-29 16:25:31 INFO  Login_Test:196 - Advanced options are hidden. Clicking to show them.
-2026-05-29 16:25:31 INFO  Login_Test:198 - Clicked on Advanced options successfully
-2026-05-29 16:25:32 INFO  Login_Test:211 - Day selected successfully
-2026-05-29 16:25:32 INFO  Login_Test:71 - Validity set to: DAY
-2026-05-29 16:25:32 INFO  Login_Test:225 - Buy stock button clicked successfully
-2026-05-29 16:25:32 INFO  Login_Test:94 - Order submitted
-2026-05-29 16:25:33 INFO  Login_Test:235 - Clicked on cross successfully
-2026-05-29 16:25:39 ERROR Login_Test:73 - TEST FAILED: regular_Longterm_Market_Day
-2026-05-29 16:25:39 INFO  Login_Test:33 - ***** Combination 2 started *****
+2026-05-31 14:53:56 INFO  TestListener:21 - ========================================
+2026-05-31 14:53:56 INFO  TestListener:22 - SUITE STARTED: Test
+2026-05-31 14:53:56 INFO  TestListener:23 - ========================================
+2026-05-31 14:53:59 INFO  TestListener:33 - TEST STARTED : login
+2026-05-31 14:53:59 INFO  Login_Test:30 - *************** Login Started ******************
+2026-05-31 14:53:59 INFO  Login_Test:41 - User ID entered successfully
+2026-05-31 14:53:59 INFO  Login_Test:47 - Password entered successfully
+2026-05-31 14:53:59 INFO  Login_Test:50 - Clicked on Login button successfully
+2026-05-31 14:54:07 INFO  Login_Test:59 - OTP entered successfully
+2026-05-31 14:54:07 INFO  Login_Test:68 - Login successful
+2026-05-31 14:54:08 INFO  Login_Test:84 - *************** Login Ended Successfully *******************
+2026-05-31 14:54:08 INFO  TestListener:40 - TEST PASSED  : login (9058 ms)
+2026-05-31 14:54:08 INFO  TestListener:33 - TEST STARTED : regular_Longterm_Market_Day
+2026-05-31 14:54:08 INFO  Login_Test:26 - ***** Combination 1 started *****
+2026-05-31 14:54:08 INFO  Login_Test:96 - Searched stock: Coal
+2026-05-31 14:54:08 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:54:09 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:54:09 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:54:09 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:54:09 INFO  Login_Test:166 - Order type: MARKET
+2026-05-31 14:54:09 INFO  Login_Test:33 - Order type set to: MARKET
+2026-05-31 14:54:10 INFO  Login_Test:132 - Quantity set: 1
+2026-05-31 14:54:10 INFO  Login_Test:193 - Advanced options expanded
+2026-05-31 14:54:10 INFO  Login_Test:206 - Validity: DAY
+2026-05-31 14:54:10 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:54:10 INFO  Login_Test:28 - ***** Combination 1 ended *****
+2026-05-31 14:54:10 INFO  TestListener:40 - TEST PASSED  : regular_Longterm_Market_Day (2661 ms)
+2026-05-31 14:54:10 INFO  TestListener:33 - TEST STARTED : regular_Longterm_Market_Immediate
+2026-05-31 14:54:11 INFO  Login_Test:96 - Searched stock: Coal
+2026-05-31 14:54:11 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:54:11 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:54:12 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:54:12 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:54:12 INFO  Login_Test:166 - Order type: MARKET
+2026-05-31 14:54:12 INFO  Login_Test:33 - Order type set to: MARKET
+2026-05-31 14:54:12 INFO  Login_Test:132 - Quantity set: 1
+2026-05-31 14:54:12 INFO  Login_Test:195 - Advanced options already visible
+2026-05-31 14:54:12 INFO  Login_Test:212 - Validity: IOC
+2026-05-31 14:54:13 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:54:13 INFO  Login_Test:34 - ***** Combination 2 ended *****
+2026-05-31 14:54:13 INFO  TestListener:40 - TEST PASSED  : regular_Longterm_Market_Immediate (2364 ms)
+2026-05-31 14:54:13 INFO  TestListener:33 - TEST STARTED : regular_Longterm_Limit_Day
+2026-05-31 14:54:13 INFO  Login_Test:39 - ***** Combination 3 started *****
+2026-05-31 14:54:13 INFO  Login_Test:96 - Searched stock: Coal
+2026-05-31 14:54:13 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:54:13 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:54:14 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:54:14 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:54:14 INFO  Login_Test:172 - Order type: LIMIT
+2026-05-31 14:54:14 INFO  Login_Test:34 - Order type set to: LIMIT
+2026-05-31 14:54:14 INFO  Login_Test:132 - Quantity set: 1
+2026-05-31 14:54:14 INFO  Login_Test:146 - Price cleared
+2026-05-31 14:54:14 INFO  Login_Test:138 - Price set: 460
+2026-05-31 14:54:15 INFO  Login_Test:195 - Advanced options already visible
+2026-05-31 14:54:15 INFO  Login_Test:206 - Validity: DAY
+2026-05-31 14:54:15 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:54:15 INFO  Login_Test:41 - ***** Combination 3 ended *****
+2026-05-31 14:54:15 INFO  TestListener:40 - TEST PASSED  : regular_Longterm_Limit_Day (2261 ms)
+2026-05-31 14:54:15 INFO  TestListener:33 - TEST STARTED : regular_Longterm_Limit_Immediate
+2026-05-31 14:54:15 INFO  Login_Test:46 - ***** Combination 4 started *****
+2026-05-31 14:54:15 INFO  Login_Test:96 - Searched stock: Coal
+2026-05-31 14:54:15 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:54:16 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:54:16 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:54:16 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:54:16 INFO  Login_Test:172 - Order type: LIMIT
+2026-05-31 14:54:16 INFO  Login_Test:34 - Order type set to: LIMIT
+2026-05-31 14:54:16 INFO  Login_Test:132 - Quantity set: 1
+2026-05-31 14:54:17 INFO  Login_Test:146 - Price cleared
+2026-05-31 14:54:17 INFO  Login_Test:138 - Price set: 460
+2026-05-31 14:54:17 INFO  Login_Test:195 - Advanced options already visible
+2026-05-31 14:54:17 INFO  Login_Test:212 - Validity: IOC
+2026-05-31 14:54:17 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:54:17 INFO  Login_Test:48 - ***** Combination 4 ended *****
+2026-05-31 14:54:17 INFO  TestListener:40 - TEST PASSED  : regular_Longterm_Limit_Immediate (2358 ms)
+2026-05-31 14:54:17 INFO  TestListener:33 - TEST STARTED : regular_Longterm_SL_Day
+2026-05-31 14:54:17 INFO  Login_Test:53 - ***** Combination 5 started *****
+2026-05-31 14:54:18 INFO  Login_Test:96 - Searched stock: Coal
+2026-05-31 14:54:18 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:54:18 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:54:18 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:54:19 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:54:19 INFO  Login_Test:178 - Order type: SL
+2026-05-31 14:54:19 INFO  Login_Test:35 - Order type set to: SL
+2026-05-31 14:54:19 INFO  Login_Test:132 - Quantity set: 1
+2026-05-31 14:54:19 INFO  Login_Test:146 - Price cleared
+2026-05-31 14:54:19 INFO  Login_Test:138 - Price set: 460
+2026-05-31 14:54:20 INFO  Login_Test:160 - Trigger price cleared
+2026-05-31 14:54:20 INFO  Login_Test:152 - Trigger price set: 459
+2026-05-31 14:54:20 INFO  Login_Test:195 - Advanced options already visible
+2026-05-31 14:54:20 INFO  Login_Test:206 - Validity: DAY
+2026-05-31 14:54:20 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:54:20 INFO  Login_Test:55 - ***** Combination 5 ended *****
+2026-05-31 14:54:20 INFO  TestListener:40 - TEST PASSED  : regular_Longterm_SL_Day (2841 ms)
+2026-05-31 14:54:20 INFO  TestListener:33 - TEST STARTED : regular_Longterm_SL_Immediate
+2026-05-31 14:54:20 INFO  Login_Test:60 - ***** Combination 6 started *****
+2026-05-31 14:54:21 INFO  Login_Test:96 - Searched stock: Coal
+2026-05-31 14:54:21 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:54:21 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:54:21 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:54:21 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:54:22 INFO  Login_Test:178 - Order type: SL
+2026-05-31 14:54:22 INFO  Login_Test:35 - Order type set to: SL
+2026-05-31 14:54:22 INFO  Login_Test:132 - Quantity set: 1
+2026-05-31 14:54:22 INFO  Login_Test:146 - Price cleared
+2026-05-31 14:54:22 INFO  Login_Test:138 - Price set: 460
+2026-05-31 14:54:22 INFO  Login_Test:160 - Trigger price cleared
+2026-05-31 14:54:23 INFO  Login_Test:152 - Trigger price set: 459
+2026-05-31 14:54:23 INFO  Login_Test:195 - Advanced options already visible
+2026-05-31 14:54:23 INFO  Login_Test:212 - Validity: IOC
+2026-05-31 14:54:23 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:54:23 INFO  Login_Test:62 - ***** Combination 6 ended *****
+2026-05-31 14:54:23 INFO  TestListener:40 - TEST PASSED  : regular_Longterm_SL_Immediate (2725 ms)
+2026-05-31 14:54:23 INFO  TestListener:33 - TEST STARTED : regular_Longterm_SLM_Day
+2026-05-31 14:54:23 INFO  Login_Test:67 - ***** Combination 7 started *****
+2026-05-31 14:54:23 INFO  Login_Test:96 - Searched stock: Coal
+2026-05-31 14:54:23 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:54:24 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:54:24 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:54:24 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:54:24 INFO  Login_Test:184 - Order type: SL-M
+2026-05-31 14:54:24 INFO  Login_Test:36 - Order type set to: SL-M
+2026-05-31 14:54:24 INFO  Login_Test:132 - Quantity set: 1
+2026-05-31 14:54:25 INFO  Login_Test:160 - Trigger price cleared
+2026-05-31 14:54:25 INFO  Login_Test:152 - Trigger price set: 459
+2026-05-31 14:54:25 INFO  Login_Test:195 - Advanced options already visible
+2026-05-31 14:54:25 INFO  Login_Test:206 - Validity: DAY
+2026-05-31 14:54:25 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:54:25 INFO  Login_Test:69 - ***** Combination 7 ended *****
+2026-05-31 14:54:25 INFO  TestListener:40 - TEST PASSED  : regular_Longterm_SLM_Day (2247 ms)
+2026-05-31 14:54:25 INFO  TestListener:33 - TEST STARTED : regular_Longterm_SLM_Immediate
+2026-05-31 14:54:25 INFO  Login_Test:74 - ***** Combination 8 started *****
+2026-05-31 14:54:26 INFO  Login_Test:96 - Searched stock: Coal
+2026-05-31 14:54:26 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:54:26 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:54:26 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:54:26 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:54:26 INFO  Login_Test:184 - Order type: SL-M
+2026-05-31 14:54:26 INFO  Login_Test:36 - Order type set to: SL-M
+2026-05-31 14:54:27 INFO  Login_Test:132 - Quantity set: 1
+2026-05-31 14:54:27 INFO  Login_Test:160 - Trigger price cleared
+2026-05-31 14:54:27 INFO  Login_Test:152 - Trigger price set: 459
+2026-05-31 14:54:27 INFO  Login_Test:195 - Advanced options already visible
+2026-05-31 14:54:27 INFO  Login_Test:212 - Validity: IOC
+2026-05-31 14:54:27 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:54:27 INFO  Login_Test:76 - ***** Combination 8 ended *****
+2026-05-31 14:54:27 INFO  TestListener:40 - TEST PASSED  : regular_Longterm_SLM_Immediate (2267 ms)
+2026-05-31 14:54:27 INFO  TestListener:33 - TEST STARTED : verifyQuantityAs0
+2026-05-31 14:54:27 INFO  Login_Test:83 - ***** TC_001 started *****
+2026-05-31 14:54:28 INFO  Login_Test:96 - Searched stock: Coal
+2026-05-31 14:54:28 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:54:28 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:54:28 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:54:28 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:54:29 INFO  Login_Test:166 - Order type: MARKET
+2026-05-31 14:54:29 INFO  Login_Test:33 - Order type set to: MARKET
+2026-05-31 14:54:29 INFO  Login_Test:132 - Quantity set: 0
+2026-05-31 14:54:29 INFO  Login_Test:195 - Advanced options already visible
+2026-05-31 14:54:29 INFO  Login_Test:206 - Validity: DAY
+2026-05-31 14:54:29 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:54:29 WARN  Login_Test:20 - RETRYING TEST  : verifyQuantityAs0 | Attempt 1 of 2
+2026-05-31 14:54:29 WARN  TestListener:62 - TEST SKIPPED : verifyQuantityAs0
+2026-05-31 14:54:29 INFO  TestListener:33 - TEST STARTED : verifyQuantityAs0
+2026-05-31 14:54:29 INFO  Login_Test:83 - ***** TC_001 started *****
+2026-05-31 14:54:30 INFO  Login_Test:96 - Searched stock: Coal
+2026-05-31 14:54:30 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:54:30 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:54:30 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:54:30 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:54:31 INFO  Login_Test:166 - Order type: MARKET
+2026-05-31 14:54:31 INFO  Login_Test:33 - Order type set to: MARKET
+2026-05-31 14:54:31 INFO  Login_Test:132 - Quantity set: 0
+2026-05-31 14:54:31 INFO  Login_Test:195 - Advanced options already visible
+2026-05-31 14:54:31 INFO  Login_Test:206 - Validity: DAY
+2026-05-31 14:54:31 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:54:31 INFO  Login_Test:273 - Confirmed: invalid value rejected
+2026-05-31 14:54:31 INFO  Login_Test:86 - ***** TC_001 ended *****
+2026-05-31 14:54:31 INFO  TestListener:40 - TEST PASSED  : verifyQuantityAs0 (2097 ms)
+2026-05-31 14:54:31 INFO  TestListener:33 - TEST STARTED : verifyQuantityLessThan0
+2026-05-31 14:54:31 INFO  Login_Test:91 - ***** TC_002 started *****
+2026-05-31 14:54:32 INFO  Login_Test:96 - Searched stock: Coal
+2026-05-31 14:54:32 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:54:32 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:54:32 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:54:33 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:54:33 INFO  Login_Test:166 - Order type: MARKET
+2026-05-31 14:54:33 INFO  Login_Test:33 - Order type set to: MARKET
+2026-05-31 14:54:33 INFO  Login_Test:132 - Quantity set: -1
+2026-05-31 14:54:33 INFO  Login_Test:195 - Advanced options already visible
+2026-05-31 14:54:33 INFO  Login_Test:206 - Validity: DAY
+2026-05-31 14:54:33 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:54:33 WARN  Login_Test:20 - RETRYING TEST  : verifyQuantityLessThan0 | Attempt 1 of 2
+2026-05-31 14:54:33 WARN  TestListener:62 - TEST SKIPPED : verifyQuantityLessThan0
+2026-05-31 14:54:33 INFO  TestListener:33 - TEST STARTED : verifyQuantityLessThan0
+2026-05-31 14:54:33 INFO  Login_Test:91 - ***** TC_002 started *****
+2026-05-31 14:54:34 INFO  Login_Test:96 - Searched stock: Coal
+2026-05-31 14:54:34 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:54:34 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:54:34 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:54:35 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:54:35 INFO  Login_Test:166 - Order type: MARKET
+2026-05-31 14:54:35 INFO  Login_Test:33 - Order type set to: MARKET
+2026-05-31 14:54:35 INFO  Login_Test:132 - Quantity set: -1
+2026-05-31 14:54:35 INFO  Login_Test:195 - Advanced options already visible
+2026-05-31 14:54:35 INFO  Login_Test:206 - Validity: DAY
+2026-05-31 14:54:35 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:54:45 INFO  Login_Test:273 - Confirmed: invalid value rejected
+2026-05-31 14:54:45 INFO  Login_Test:94 - ***** TC_002 ended *****
+2026-05-31 14:54:45 INFO  TestListener:40 - TEST PASSED  : verifyQuantityLessThan0 (12035 ms)
+2026-05-31 14:54:45 INFO  TestListener:33 - TEST STARTED : verifyQuantityMoreExchangeQuantity
+2026-05-31 14:54:45 INFO  Login_Test:108 - ***** TC_004 started *****
+2026-05-31 14:54:46 INFO  Login_Test:96 - Searched stock: Coalindia
+2026-05-31 14:54:46 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:54:47 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:54:47 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:54:47 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:54:47 INFO  Login_Test:166 - Order type: MARKET
+2026-05-31 14:54:47 INFO  Login_Test:33 - Order type set to: MARKET
+2026-05-31 14:54:47 INFO  Login_Test:132 - Quantity set: 50000000
+2026-05-31 14:54:47 INFO  Login_Test:195 - Advanced options already visible
+2026-05-31 14:54:47 INFO  Login_Test:206 - Validity: DAY
+2026-05-31 14:54:48 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:54:49 INFO  Login_Test:228 - Toast dismissed
+2026-05-31 14:54:49 INFO  Login_Test:286 - Confirmed: circuit price rejected — 
+2026-05-31 14:54:49 INFO  Login_Test:111 - ***** TC_004 ended *****
+2026-05-31 14:54:49 INFO  TestListener:40 - TEST PASSED  : verifyQuantityMoreExchangeQuantity (3348 ms)
+2026-05-31 14:54:49 INFO  TestListener:33 - TEST STARTED : verifyQuantityMoreThan0
+2026-05-31 14:54:49 INFO  Login_Test:99 - ***** TC_003 started *****
+2026-05-31 14:54:49 INFO  Login_Test:96 - Searched stock: Coalindia
+2026-05-31 14:54:49 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:54:50 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:54:50 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:54:50 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:54:50 INFO  Login_Test:166 - Order type: MARKET
+2026-05-31 14:54:50 INFO  Login_Test:33 - Order type set to: MARKET
+2026-05-31 14:54:50 INFO  Login_Test:132 - Quantity set: 2
+2026-05-31 14:54:50 INFO  Login_Test:195 - Advanced options already visible
+2026-05-31 14:54:50 INFO  Login_Test:206 - Validity: DAY
+2026-05-31 14:54:50 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:54:51 INFO  Login_Test:279 - Confirmed: valid value accepted
+2026-05-31 14:54:51 INFO  Login_Test:103 - ***** TC_003 ended *****
+2026-05-31 14:54:51 INFO  TestListener:40 - TEST PASSED  : verifyQuantityMoreThan0 (2015 ms)
+2026-05-31 14:54:51 INFO  TestListener:33 - TEST STARTED : verifyPriceAs0
+2026-05-31 14:54:51 INFO  Login_Test:116 - ***** TC_005 started *****
+2026-05-31 14:54:51 INFO  Login_Test:96 - Searched stock: Coalindia
+2026-05-31 14:54:52 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:54:52 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:54:52 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:54:52 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:54:52 INFO  Login_Test:172 - Order type: LIMIT
+2026-05-31 14:54:52 INFO  Login_Test:34 - Order type set to: LIMIT
+2026-05-31 14:54:52 INFO  Login_Test:132 - Quantity set: 2
+2026-05-31 14:54:52 INFO  Login_Test:146 - Price cleared
+2026-05-31 14:54:53 INFO  Login_Test:138 - Price set: 0
+2026-05-31 14:54:53 INFO  Login_Test:195 - Advanced options already visible
+2026-05-31 14:54:53 INFO  Login_Test:206 - Validity: DAY
+2026-05-31 14:54:53 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:54:53 WARN  Login_Test:20 - RETRYING TEST  : verifyPriceAs0 | Attempt 1 of 2
+2026-05-31 14:54:53 WARN  TestListener:62 - TEST SKIPPED : verifyPriceAs0
+2026-05-31 14:54:53 INFO  TestListener:33 - TEST STARTED : verifyPriceAs0
+2026-05-31 14:54:53 INFO  Login_Test:116 - ***** TC_005 started *****
+2026-05-31 14:54:54 INFO  Login_Test:96 - Searched stock: Coalindia
+2026-05-31 14:54:54 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:54:54 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:54:54 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:54:54 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:54:55 INFO  Login_Test:172 - Order type: LIMIT
+2026-05-31 14:54:55 INFO  Login_Test:34 - Order type set to: LIMIT
+2026-05-31 14:54:55 INFO  Login_Test:132 - Quantity set: 2
+2026-05-31 14:54:55 INFO  Login_Test:146 - Price cleared
+2026-05-31 14:54:55 INFO  Login_Test:138 - Price set: 0
+2026-05-31 14:54:55 INFO  Login_Test:195 - Advanced options already visible
+2026-05-31 14:54:55 INFO  Login_Test:206 - Validity: DAY
+2026-05-31 14:54:55 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:54:55 WARN  Login_Test:20 - RETRYING TEST  : verifyPriceAs0 | Attempt 2 of 2
+2026-05-31 14:54:55 WARN  TestListener:62 - TEST SKIPPED : verifyPriceAs0
+2026-05-31 14:54:55 INFO  TestListener:33 - TEST STARTED : verifyPriceAs0
+2026-05-31 14:54:55 INFO  Login_Test:116 - ***** TC_005 started *****
+2026-05-31 14:54:56 INFO  Login_Test:96 - Searched stock: Coalindia
+2026-05-31 14:54:56 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:54:56 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:54:57 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:54:57 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:54:57 INFO  Login_Test:172 - Order type: LIMIT
+2026-05-31 14:54:57 INFO  Login_Test:34 - Order type set to: LIMIT
+2026-05-31 14:54:57 INFO  Login_Test:132 - Quantity set: 2
+2026-05-31 14:54:57 INFO  Login_Test:146 - Price cleared
+2026-05-31 14:54:57 INFO  Login_Test:138 - Price set: 0
+2026-05-31 14:54:58 INFO  Login_Test:195 - Advanced options already visible
+2026-05-31 14:54:58 INFO  Login_Test:206 - Validity: DAY
+2026-05-31 14:54:58 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:55:08 INFO  Login_Test:273 - Confirmed: invalid value rejected
+2026-05-31 14:55:08 INFO  Login_Test:119 - ***** TC_005 ended *****
+2026-05-31 14:55:08 INFO  TestListener:40 - TEST PASSED  : verifyPriceAs0 (12439 ms)
+2026-05-31 14:55:08 INFO  TestListener:33 - TEST STARTED : priceMorethanCircuit
+2026-05-31 14:55:08 INFO  Login_Test:124 - ***** TC_006 started *****
+2026-05-31 14:55:09 INFO  Login_Test:96 - Searched stock: Coalindia
+2026-05-31 14:55:09 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:55:09 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:55:09 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:55:10 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:55:10 INFO  Login_Test:172 - Order type: LIMIT
+2026-05-31 14:55:10 INFO  Login_Test:34 - Order type set to: LIMIT
+2026-05-31 14:55:10 INFO  Login_Test:132 - Quantity set: 2
+2026-05-31 14:55:10 INFO  Login_Test:146 - Price cleared
+2026-05-31 14:55:10 INFO  Login_Test:138 - Price set: 5000
+2026-05-31 14:55:10 INFO  Login_Test:195 - Advanced options already visible
+2026-05-31 14:55:10 INFO  Login_Test:206 - Validity: DAY
+2026-05-31 14:55:11 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:55:11 WARN  Login_Test:20 - RETRYING TEST  : priceMorethanCircuit | Attempt 1 of 2
+2026-05-31 14:55:11 WARN  TestListener:62 - TEST SKIPPED : priceMorethanCircuit
+2026-05-31 14:55:11 INFO  TestListener:33 - TEST STARTED : priceMorethanCircuit
+2026-05-31 14:55:11 INFO  Login_Test:124 - ***** TC_006 started *****
+2026-05-31 14:55:11 INFO  Login_Test:96 - Searched stock: Coalindia
+2026-05-31 14:55:11 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:55:12 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:55:12 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:55:12 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:55:12 INFO  Login_Test:172 - Order type: LIMIT
+2026-05-31 14:55:12 INFO  Login_Test:34 - Order type set to: LIMIT
+2026-05-31 14:55:12 INFO  Login_Test:132 - Quantity set: 2
+2026-05-31 14:55:12 INFO  Login_Test:146 - Price cleared
+2026-05-31 14:55:13 INFO  Login_Test:138 - Price set: 5000
+2026-05-31 14:55:13 INFO  Login_Test:195 - Advanced options already visible
+2026-05-31 14:55:13 INFO  Login_Test:206 - Validity: DAY
+2026-05-31 14:55:13 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:55:14 WARN  Login_Test:230 - Toast cross not found — may have already been dismissed: element click intercepted: Element <span class="icon icon-times close"></span> is not clickable at point (1480, 471). Other element would receive the click: <span class="icon icon-times close"></span>
+  (Session info: chrome=148.0.7778.179)
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8be0e5549151a2bbb9feb7865a8cc31b, clickElement {id=f.160754C818D8DA5761D260B22B8C9F18.d.5B3872D2299C74F0A41E066B347E7992.e.1021}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\Dheeraj\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60428}, goog:processID: 19696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60428/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8be0e5549151a2bbb9feb7865a8cc31b)] -> xpath: //div[contains(@class,'su-toast-item')]//span[contains(@class,'close')]]
+Session ID: 8be0e5549151a2bbb9feb7865a8cc31b
+2026-05-31 14:55:14 INFO  Login_Test:286 - Confirmed: circuit price rejected — Your order price is higher than the current upper circuit limit of 503.65. You can place an order within the range or use GTT for long-standing orders.
+2026-05-31 14:55:14 INFO  Login_Test:127 - ***** TC_006 ended *****
+2026-05-31 14:55:14 INFO  TestListener:40 - TEST PASSED  : priceMorethanCircuit (3444 ms)
+2026-05-31 14:55:14 INFO  TestListener:33 - TEST STARTED : priceLessthanCircuit
+2026-05-31 14:55:14 INFO  Login_Test:132 - ***** TC_007 started *****
+2026-05-31 14:55:15 INFO  Login_Test:96 - Searched stock: Coalindia
+2026-05-31 14:55:15 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:55:15 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:55:15 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:55:15 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:55:15 INFO  Login_Test:172 - Order type: LIMIT
+2026-05-31 14:55:15 INFO  Login_Test:34 - Order type set to: LIMIT
+2026-05-31 14:55:16 INFO  Login_Test:132 - Quantity set: 2
+2026-05-31 14:55:16 INFO  Login_Test:146 - Price cleared
+2026-05-31 14:55:16 INFO  Login_Test:138 - Price set: 200
+2026-05-31 14:55:16 INFO  Login_Test:195 - Advanced options already visible
+2026-05-31 14:55:16 INFO  Login_Test:206 - Validity: DAY
+2026-05-31 14:55:16 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:55:17 WARN  Login_Test:230 - Toast cross not found — may have already been dismissed: stale element reference: stale element not found in the current frame
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8be0e5549151a2bbb9feb7865a8cc31b, isElementDisplayed {id=f.160754C818D8DA5761D260B22B8C9F18.d.5B3872D2299C74F0A41E066B347E7992.e.1021}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\Dheeraj\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60428}, goog:processID: 19696, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60428/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (8be0e5549151a2bbb9feb7865a8cc31b)] -> xpath: //div[contains(@class,'su-toast-item')]//span[contains(@class,'close')]]
+Session ID: 8be0e5549151a2bbb9feb7865a8cc31b
+2026-05-31 14:55:17 INFO  Login_Test:286 - Confirmed: circuit price rejected — Your order price is higher than the current upper circuit limit of 503.65. You can place an order within the range or use GTT for long-standing orders.
+2026-05-31 14:55:17 INFO  Login_Test:135 - ***** TC_007 ended *****
+2026-05-31 14:55:17 INFO  TestListener:40 - TEST PASSED  : priceLessthanCircuit (2769 ms)
+2026-05-31 14:55:17 INFO  TestListener:33 - TEST STARTED : triggerPriceGreaterThanPrice
+2026-05-31 14:55:17 INFO  Login_Test:140 - ***** TC_008 started *****
+2026-05-31 14:55:17 INFO  Login_Test:96 - Searched stock: Coalindia
+2026-05-31 14:55:18 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:55:18 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:55:18 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:55:18 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:55:18 INFO  Login_Test:178 - Order type: SL
+2026-05-31 14:55:18 INFO  Login_Test:35 - Order type set to: SL
+2026-05-31 14:55:18 INFO  Login_Test:132 - Quantity set: 2
+2026-05-31 14:55:19 INFO  Login_Test:146 - Price cleared
+2026-05-31 14:55:19 INFO  Login_Test:138 - Price set: 465
+2026-05-31 14:55:19 INFO  Login_Test:160 - Trigger price cleared
+2026-05-31 14:55:19 INFO  Login_Test:152 - Trigger price set: 467
+2026-05-31 14:55:19 INFO  Login_Test:195 - Advanced options already visible
+2026-05-31 14:55:19 INFO  Login_Test:206 - Validity: DAY
+2026-05-31 14:55:19 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:55:19 WARN  Login_Test:20 - RETRYING TEST  : triggerPriceGreaterThanPrice | Attempt 1 of 2
+2026-05-31 14:55:19 WARN  TestListener:62 - TEST SKIPPED : triggerPriceGreaterThanPrice
+2026-05-31 14:55:19 INFO  TestListener:33 - TEST STARTED : triggerPriceGreaterThanPrice
+2026-05-31 14:55:19 INFO  Login_Test:140 - ***** TC_008 started *****
+2026-05-31 14:55:20 INFO  Login_Test:96 - Searched stock: Coalindia
+2026-05-31 14:55:20 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:55:20 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:55:20 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:55:21 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:55:21 INFO  Login_Test:178 - Order type: SL
+2026-05-31 14:55:21 INFO  Login_Test:35 - Order type set to: SL
+2026-05-31 14:55:21 INFO  Login_Test:132 - Quantity set: 2
+2026-05-31 14:55:21 INFO  Login_Test:146 - Price cleared
+2026-05-31 14:55:21 INFO  Login_Test:138 - Price set: 465
+2026-05-31 14:55:22 INFO  Login_Test:160 - Trigger price cleared
+2026-05-31 14:55:22 INFO  Login_Test:152 - Trigger price set: 467
+2026-05-31 14:55:22 INFO  Login_Test:195 - Advanced options already visible
+2026-05-31 14:55:22 INFO  Login_Test:206 - Validity: DAY
+2026-05-31 14:55:22 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:55:22 WARN  Login_Test:20 - RETRYING TEST  : triggerPriceGreaterThanPrice | Attempt 2 of 2
+2026-05-31 14:55:22 WARN  TestListener:62 - TEST SKIPPED : triggerPriceGreaterThanPrice
+2026-05-31 14:55:22 INFO  TestListener:33 - TEST STARTED : triggerPriceGreaterThanPrice
+2026-05-31 14:55:22 INFO  Login_Test:140 - ***** TC_008 started *****
+2026-05-31 14:55:23 INFO  Login_Test:96 - Searched stock: Coalindia
+2026-05-31 14:55:23 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:55:23 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:55:23 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:55:23 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:55:24 INFO  Login_Test:178 - Order type: SL
+2026-05-31 14:55:24 INFO  Login_Test:35 - Order type set to: SL
+2026-05-31 14:55:24 INFO  Login_Test:132 - Quantity set: 2
+2026-05-31 14:55:24 INFO  Login_Test:146 - Price cleared
+2026-05-31 14:55:24 INFO  Login_Test:138 - Price set: 465
+2026-05-31 14:55:24 INFO  Login_Test:160 - Trigger price cleared
+2026-05-31 14:55:24 INFO  Login_Test:152 - Trigger price set: 467
+2026-05-31 14:55:24 INFO  Login_Test:195 - Advanced options already visible
+2026-05-31 14:55:25 INFO  Login_Test:206 - Validity: DAY
+2026-05-31 14:55:25 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:55:25 ERROR Login_Test:23 - RETRY EXHAUSTED: triggerPriceGreaterThanPrice failed after 2 retries
+2026-05-31 14:55:25 INFO  TestListener:33 - Screenshot saved: C:\Study\Qspiders\Automation\Zerodha\ds\Zerodha/reports/triggerPriceGreaterThanPrice_20260531_145525.png
+2026-05-31 14:55:25 ERROR TestListener:54 - TEST FAILED  : triggerPriceGreaterThanPrice (2725 ms)
+2026-05-31 14:55:25 ERROR TestListener:55 -   Reason     : Test failed — invalid value was accepted expected [false] but found [true]
+2026-05-31 14:55:25 INFO  TestListener:33 - TEST STARTED : triggerPriceLessThanMarketPrice
+2026-05-31 14:55:25 INFO  Login_Test:148 - ***** TC_009 started *****
+2026-05-31 14:55:26 INFO  Login_Test:96 - Searched stock: Coalindia
+2026-05-31 14:55:26 INFO  Login_Test:102 - Stock hovered successfully
+2026-05-31 14:55:26 INFO  Login_Test:114 - Clicked Sell button
+2026-05-31 14:55:26 INFO  Login_Test:120 - Navigated to Regular
+2026-05-31 14:55:26 INFO  Login_Test:126 - Longterm selected
+2026-05-31 14:55:26 INFO  Login_Test:178 - Order type: SL
+2026-05-31 14:55:26 INFO  Login_Test:35 - Order type set to: SL
+2026-05-31 14:55:27 INFO  Login_Test:132 - Quantity set: 2
+2026-05-31 14:55:27 INFO  Login_Test:146 - Price cleared
+2026-05-31 14:55:27 INFO  Login_Test:138 - Price set: 465
+2026-05-31 14:55:27 INFO  Login_Test:160 - Trigger price cleared
+2026-05-31 14:55:27 INFO  Login_Test:152 - Trigger price set: 0
+2026-05-31 14:55:27 INFO  Login_Test:195 - Advanced options already visible
+2026-05-31 14:55:27 INFO  Login_Test:206 - Validity: DAY
+2026-05-31 14:55:28 INFO  Login_Test:218 - Buy submitted
+2026-05-31 14:55:28 INFO  Login_Test:228 - Toast dismissed
+2026-05-31 14:55:28 INFO  Login_Test:286 - Confirmed: circuit price rejected — 
+2026-05-31 14:55:28 INFO  Login_Test:151 - ***** TC_009 ended *****
+2026-05-31 14:55:28 INFO  TestListener:40 - TEST PASSED  : triggerPriceLessThanMarketPrice (2733 ms)
+2026-05-31 14:55:29 INFO  TestListener:69 - ========================================
+2026-05-31 14:55:29 INFO  TestListener:70 - SUITE FINISHED: Test
+2026-05-31 14:55:29 INFO  TestListener:71 -   Passed  : 17
+2026-05-31 14:55:29 INFO  TestListener:72 -   Failed  : 1
+2026-05-31 14:55:29 INFO  TestListener:73 -   Skipped : 7
+2026-05-31 14:55:29 INFO  TestListener:74 - ========================================
+2026-05-31 14:55:29 INFO  Login_Test:61 - Browser closed successfully

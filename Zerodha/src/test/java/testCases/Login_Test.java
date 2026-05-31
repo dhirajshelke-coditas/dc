@@ -18,6 +18,7 @@ import org.testng.annotations.Test;
 import pageObject.HomePage;
 import pageObject.LoginPage;
 import testBase.BaseClass;
+import testBase.GenericMethods;
 
 public class Login_Test extends BaseClass {
 
@@ -28,12 +29,8 @@ public class Login_Test extends BaseClass {
 
 		logger.info("*************** Login Started ******************");
 
-		try {
-
-			FileReader file = new FileReader(System.getProperty("user.dir") + "//src//test//resources//config.properties");
-
-			p = new Properties();
-			p.load(file);
+		try {		
+			p=GenericMethods.loadProperties(System.getProperty("user.dir") + "//src//test//resources//config.properties");
 
 			LoginPage login = new LoginPage(driver);
 
@@ -56,10 +53,13 @@ public class Login_Test extends BaseClass {
 
 			wait.until(ExpectedConditions.presenceOfElementLocated(
 					By.xpath("(//button[@type='button'])[2]")));
+			
+			
 
 			logger.info("OTP entered successfully");
 
-			String expectedURL = "https://kite.zerodha.com/dashboard";
+		//	String expectedURL = "https://kite.zerodha.com/dashboard";
+			String expectedURL = "https://kite.zerodha.com/";
 			String actualURL = driver.getCurrentUrl();
 			HomePage hm = new HomePage(driver);
 

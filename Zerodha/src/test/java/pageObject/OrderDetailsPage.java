@@ -36,14 +36,13 @@ public class OrderDetailsPage extends BasePage{
 	
 	
 	public void clickOrderStatus() {
-		wait.until(ExpectedConditions.visibilityOf(orderStatus));
+		verifyVisibilityOfElement(orderStatus);
 		orderStatus.click();
 		logger.info("Clicked on order status");
 	}
 	
 	public void verifyOrder(String qty, String price, String trigger, String orderType, String productType, String validityType, String order) {
-		wait.until(ExpectedConditions.visibilityOfAllElements(orderDetails));
-
+		verifyVisibilityOfElements(orderDetails);
 		String actQty = orderDetails.get(0).getText().trim();
 	    String actPrice = orderDetails.get(1).getText().trim();
 	    String actTriggerPrice = orderDetails.get(3).getText().trim();
@@ -69,8 +68,7 @@ public class OrderDetailsPage extends BasePage{
 	
 	public void verifyStoplossTargetOrder(String qty, String price, String trigger, String orderType, 
 			String productType, String validityType, String order, String stoploss, String target) {
-		wait.until(ExpectedConditions.visibilityOfAllElements(orderDetails));
-
+		verifyVisibilityOfElements(orderDetails);
 		String actQty = orderDetails.get(0).getText().trim();
 	    String actPrice = orderDetails.get(1).getText().trim();
 	    String actTriggerPrice = orderDetails.get(3).getText().trim();

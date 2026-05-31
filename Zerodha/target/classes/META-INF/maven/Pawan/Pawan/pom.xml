@@ -74,10 +74,5 @@
     <scope>compile</scope>
 </dependency>
 
-<dependency>
-    <groupId>commons-io</groupId>
-    <artifactId>commons-io</artifactId>
-    <version>2.15.1</version>
-</dependency>
   </dependencies>
 </project>
